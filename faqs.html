@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>IQmol FAQs</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="keywords" content="IQmol, Andrew Gilbert, faqs" />
+
+<link rel="shortcut icon" href="favicon.ico" >
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/arial.js"></script>
+<script type="text/javascript" src="js/cuf_run.js"></script>
+<!--[if lt IE 7]>
+<style media="screen" type="text/css">
+#container {
+    height:100%;
+}
+</style>
+<![endif]-->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-35964769-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+
+<body>
+
+
+<div id="container"> 
+
+
+   <!-- H E A D E R -->
+   <div id="header_sub">
+      <div id="header_resize">
+         <div id="header_logo">
+            <img src="images/logo.png" alt="IQmol" width="170" height="59"/>
+         </div>
+         <div id="menu">
+            <ul>
+            <li><a href="features.html"><span>Features</span></a></li>
+            <li><a href="screenshots.html"><span>Screenshots</span></a></li>
+            <li><a href="downloads.html"><span>Download</span></a></li>
+            <li><a href="downloads/IQmolUserGuide.pdf"><span>Manual</span></a></li>
+            </ul>
+          <div class="clr"></div>
+         </div>
+         <div class="clr"></div>
+
+         <div class="header_img">
+            <img src="images/spacer.gif" alt="" height="50"/>
+         </div>
+      </div>  <!-- End header_resize -->
+   </div>  <!-- End header_sub -->
+   <!-- E N D  H E A D E R -->
+
+
+   <div id="body">
+      <div class="content"> 
+
+
+         <!-- C O N T E N T -->
+         <div class="mainbar">
+
+            <div class="article">
+               <h2><span>(In)Frequently Asked Questions</span></h2>
+
+               <ol class="content_list">
+
+               <li> <h3>This program has more bugs than a formicarium, who should I tell?</h3>
+                   <p> If you find a bug please register and fill in a 
+                   <a href="bugtracking">bug report</a>.  When describing the 
+				   problem, please be as specific as possible and, if possible,
+                   provide a list of steps that can reproduce the bug.
+               </li>
+ 
+               <li> <h3>Why does the program crash when setting up a calculation?</h3>
+                   <p> IQmol relies on the Qt SQLite plugin to interface with a
+                   datbase file.  It appears that under OS X, the database file
+                   is locked if IQmol is launched off a networked file system.
+                   If this is the case the program may crash when accessing the
+                   Calculation&rarr;Ssetup menu.  Currently the only
+                   work-around for this is to ensure the IQmol.app bundle is
+                   stored on a local volume.
+               </li>
+
+               <li> <h3>Why does the crash after submitting a Q-Chem calculation?</h3>
+                   <p> If an error occurs when parsing the users .cshrc file, this caused
+                   pre-2.0 versions of IQmol to crash.  Make sure your .cshrc file (which
+                   is sourced in the qchemrun script) does not issue any errors when being
+                   sourced.
+               </li>
+
+               <li> <h3>How do I get images with decent resolution?</h3>
+				   <p> When taking a snapshot of the Viewer screen, the default
+				   parameters are suitable for display on monitors but not for
+				   printing.  If you wish to print a PNG image, it is recommended
+				   that you increase the oversampling to 4x.  This can increase
+				   the file size significantly, but if you also lower the
+				   quality setting to 80 then a good quality image can be
+                   obtained with a reasonable file size.
+				   <p> The default resolution is 72 dpi, but this can be
+				   adjusted using image editing software such as the GIMP,
+				   ImageMagik or Photoshop.  Changing the resolution will
+				   affect the physical size of the final image.  For example, if
+				   you increse the resolution to 300 dpi it will be about a
+                   quarter the original size.
+				   <p> On some platforms the vector options (.ps, .eps and
+				   .fig) do not seem to be working correctly.  The next release
+                   will have vector support for .eps, .pfd and .svg.
+               </li>
+
+			   <li> <h3>I'm an Apple fanboy and can't seem to get the translate
+                   functionality working on my laptop.</h3>
+				   <p> If you are running IQmol on a MacBook with a trackpad
+				   then you will not be able to translate the molecule in
+				   manipulate mode unless you have enabled the 'secondary mouse
+				   button'.  To do this open the System Preferences &rarr;
+                   Trackpad options from the <img src="images/apple.png" width="20" 
+				   height="20"/> menu.  There is an option to enable a One
+				   Finger Secondary Click in the bottom right (or left) of the
+				   trackpad.  If you select this then clicking in this region
+				   should activate the translate mode in IQmol.
+               </li>
+
+			   <li> <h3>I'm forced to use Windows 7 by my overly regulative
+				   supervisor, but when I open Q-Chem input and output files
+                   IQmol crashes. What's with that?</h3>
+				   <p> This is a problem that seems to be specific to Windows 7
+                   and I suspect it is either due to a problem initializing the 
+				   Open Babel plugins, or is a Windows 7 'feature' (similar
+				   problems have been reported when opening files with other
+                   software including Notepad).
+
+				   <p>I don't have access to a Windows 7 development box and so
+				   can't track this one down any further, but here are a couple
+                   of things that have worked for some users some of the time: 
+                   <ul class="content_list">
+					  <li> Try building a small molecule (e.g. methane) and
+					  click the minimize button in the ToolBar.  This loads the
+                      Open Babel forcefield plugins and seems to initialize the
+                      format plugins as well.
+                      </li>
+					  <li> Rather than using the menu to open the file, try
+					  dragging and dropping the file onto the IQmol.exe icon to
+                      open it.
+                      </li>
+
+                   </ul>
+               </li>
+
+               </ol>
+  
+            </div> <!-- End article-->
+         </div>  <!-- End mainbar -->
+         <!-- E N D  C O N T E N T -->
+
+
+         <!-- S I D E B A R -->
+         <div class="sidebar">  
+
+            <div class="gadget">
+               <img src="images/icon.png" alt="IQmol icon" width="180" height="180" />
+            </div>
+
+            <div class="gadget">
+               <h2>Navigation</h2>
+               <ul class="sb_menu">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="features.html">Features</a></li>
+                  <li><a href="screenshots.html">Screenshots</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="downloads.html">Download</a></li>
+                  <li><a href="documentation.php">Documentation</a></li>
+                  <li><a href="development.html">Development</a></li>
+                  <li><a href="http://www.iqmol.org/forum">Forum</a></li>
+               </ul>
+            </div>
+         </div>  <!-- End Side Bar -->
+         <div class="clr"></div>
+         <!-- E N D  S I D E B A R -->
+
+
+      </div>
+   </div>
+
+
+   <!-- F O O T E R -->
+   <div id="footer_bg">
+      <div id="footer">
+         <p class="lf">&copy; Copyright &nbsp;
+            <a href="http://rsc.anu.edu.au/~agilbert/gilbertspace">Andrew Gilbert</a></p>
+         <p class="rf">Layout&nbsp;
+            <a href="http://www.coolwebtemplates.net/">Website Templates</a></p>
+      </div>
+   </div>
+
+
+</div>  <!-- End container -->
+
+
+</body>
+</html>

@@ -1,1 +1,217 @@
-IQmol website
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>IQmol Molecular Viewer</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="keywords" content="IQmol, qchem, Andrew Gilbert,
+molecular viewer, quantum chemistry, orbitals, densities, wavefunction" />
+
+
+
+<link rel="shortcut icon" href="favicon.ico" >
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/arial.js"></script>
+<script type="text/javascript" src="js/cuf_run.js"></script>
+<!--[if lt IE 7]>
+<style media="screen" type="text/css">
+#container {
+    height:100%;
+}
+</style>
+<![endif]-->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-35964769-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<div id="container"> 
+
+   <!-- M A I N  H E A D E R -->
+   <div id="header_main">
+      <div id="header_resize">
+         <div id="header_logo">
+            <!-- Euphemia UCAS -->
+            <img src="images/logo.png" alt="IQmol" width="170" height="59"/>
+         </div>
+         <div id="menu">
+            <ul>
+            <li><a href="features.html"><span>Features</span></a></li>
+            <li><a href="screenshots.html"><span>Screenshots</span></a></li>
+            <li><a href="downloads.html"><span>Download</span></a></li>
+            <li><a href="downloads/IQmolUserGuide.pdf"><span>User Guide</span></a></li>
+            </ul>
+          <div class="clr"></div>
+         </div>
+         <div class="clr"></div>
+         <div id="header_img">
+             <img src="images/phenyl.png" alt="" width="370" height="270" />
+             <h2>The smart choice in molecular visualization software</h2>
+         </div>
+         <div class="clr"></div>
+      </div>  <!-- End header_resize -->
+   </div>  <!-- End header_main -->
+   <!-- E N D  M A I N  H E A D E R -->
+
+
+   <div id="body">
+      <div class="content"> 
+
+
+         <!-- C O N T E N T -->
+         <div class="mainbar">
+
+            <div class="splash">
+            <div class="article">
+               <h2><span>IQmol</span></h2>
+               <img src="images/icon_reflect.jpg" width="200" height="327" alt="" />
+
+			   <p> IQmol is a free open-source molecular editor and
+			   visualization package.  It offers a range of features including
+			   a molecular editor, surface generation (orbitals and densities) and
+			   animations (vibrational modes and reaction pathways).
+
+			  <p> IQmol is written using the <a href="http://www.qt.io">Qt</a>
+			  libraries which enables it to run on a range of platforms
+			  including OS X, Windows and Linux.
+
+			  <p> It has been integrated with the <a
+			  href="http://www.q-chem.com">Q-Chem</a> quantum chemistry package and
+              offers an intuitive enviroment to set up,
+              run, and analyse Q-Chem calculations.  However, it can also read and
+              display a variety of file formats, including the widely available
+              formatted checkpoint file.
+              </p>
+
+            </div> <!-- End article-->
+            </div> <!-- End splash -->
+
+            <div class="article">
+               <h2><span>Latest News</span></h2>
+
+                             <div class="newpara">
+                 <img src="images/3.1.png" alt="" width="60" height="60" />
+                 <p><b>Version 3.1 is now available!</b>  
+                    <!-- 
+                    This release adds better support for solvent calculations
+                    and reading in isotopic substition calculations from Q-Chem.
+                    This release adds 
+                    the ability to visualize Dyson orbitals and allows arbitrary 
+                    zoom selection to spectra. -->
+                  <br>
+				 See the <a href="downloads.html">downloads</a> 
+                 page for links to the latest version.
+                 </p>
+               </div>
+
+               <div class="newpara">
+                 <p><b>User Guide now available!</b>  An illustrated 
+                 <a href="downloads/IQmolUserGuide.pdf">User Guide</a> is now
+                 available which provides a gentle introduction to IQmol.
+                 </p>
+               </div>
+
+
+			   <p> <b>IQmol Youtube channel:</b> IQmol now has its own
+               <a href=http://www.youtube.com/channel/UCcKvlZu03t6wfvEanaQejOg>
+               Youtube channel.</a> which contains some animations generated with
+               IQmol.
+    
+
+			   <p> <b>Source code available on GitHub</b>  By popular request
+               you can now download the latest source code from 
+			   <a href=https://github.com/nutjunkie/IQmol>GitHub</a>. If you
+               would like to become a contributor to IQmol, please let me know.
+
+
+          </div>
+
+         </div>  <!-- end mainbar -->
+         <!-- E N D  C O N T E N T -->
+
+
+         <!-- S I D E B A R -->
+         <div class="sidebar"> 
+
+            <div class="gadget">
+               <h2>Navigation</h2>
+               <ul class="sb_menu">
+                  <li><a href="features.html">Features</a></li>
+                  <li><a href="screenshots">Screenshots</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="downloads.html">Download</a></li>
+                  <li><a href="downloads/IQmolUserGuide.pdf">User Guide</a></li>
+                  <li><a href="development.html">Development</a></li>
+               </ul>
+            </div>
+
+            <div class="gadget">
+               <h2><span>External Links</span></h2>
+               <ul class="ex_menu">
+                  <li><a href="http://www.q-chem.com">Q-Chem Inc.</a><br />
+                    A leading quantum chemistry software package</li>
+                  <li><a href="http://rsc.anu.edu.au/~pgill/">Research Group</a><br />
+                    Quantum chemistry at the ANU</li>
+               </ul>
+            </div>
+
+           <div class="fb-like" data-href="http://iqmol.org" data-send="false" 
+                data-layout="button_count" data-width="450" data-show-faces="false">
+           </div>&nbsp;&nbsp;
+           <a href=http://www.youtube.com/channel/UCcKvlZu03t6wfvEanaQejOg>
+              <img src="images/youtube.png" width="48" height="25" alt="Youtube"/></a>
+
+
+         </div>  <!-- end sidebar -->
+         <div class="clr"></div> 
+         <!-- E N D  S I D E B A R -->
+
+      </div>
+   </div>
+
+
+    
+   <!-- F O O T E R -->
+   <div id="footer_bg">
+      <div id="footer">
+         <p class="lf">&copy; Copyright &nbsp;
+            <a href="http://rsc.anu.edu.au/~agilbert/gilbertspace">Andrew Gilbert</a></p>
+         <p class="rf">Layout&nbsp;
+            <a href="http://www.coolwebtemplates.net/">Website Templates</a></p>
+
+      </div>
+   </div>
+   <!-- E N D  F O O T E R -->
+
+
+</div>  <!-- End container -->
+
+
+
+</body>
+</html>

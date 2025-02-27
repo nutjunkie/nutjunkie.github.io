@@ -1,0 +1,270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>IQmol Features</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="keywords" content="IQmol, Andrew Gilbert, features" />
+
+<link rel="shortcut icon" href="favicon.ico" >
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/arial.js"></script>
+<script type="text/javascript" src="js/cuf_run.js"></script>
+<!--[if lt IE 7]>
+<style media="screen" type="text/css">
+#container {
+    height:100%;
+}
+</style>
+<![endif]-->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-35964769-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+
+<body>
+
+
+<div id="container"> 
+
+
+   <!-- H E A D E R -->
+   <div id="header_sub">
+      <div id="header_resize">
+         <div id="header_logo">
+            <a href="index.html">
+            <img src="images/logo.png" alt="IQmol" width="170" height="59"/></a>
+         </div>
+         <div id="menu">
+            <ul>
+            <li class="active"><a href="features.html"><span>Features</span></a></li>
+            <li><a href="screenshots.html"><span>Screenshots</span></a></li>
+            <li><a href="downloads.html"><span>Download</span></a></li>
+            <li><a href="downloads/IQmolUserGuide.pdf"><span>Manual</span></a></li>
+            </ul>
+          <div class="clr"></div>
+         </div>
+         <div class="clr"></div>
+
+         <div class="header_img">
+            <img src="images/spacer.gif" alt="" height="50"/>
+         </div>
+      </div>  <!-- End header_resize -->
+   </div>  <!-- End header_sub -->
+   <!-- E N D  H E A D E R -->
+
+
+   <div id="body">
+      <div class="content"> 
+
+
+         <!-- C O N T E N T -->
+         <div class="mainbar">
+
+            <div class="article">
+               <h2><span>New Features in 2.9</span></h2>
+
+               <ul class="content_list">
+                  <li> Support for plotting localized orbitals.
+                  <li> Support for excited state densities and orbitals (NTOs, attachment/detachment densities).
+                  <li> Support for Freezing String calculation setup and analysis.
+               </ul>
+               </p>
+
+            </div> <!-- end article -->
+
+
+            <div class="article">
+               <h2><span>New Features in 2.8</span></h2>
+
+               <ul class="content_list">
+                  <li> Export of POV-Ray scene files
+                  <li> Clipping plane for surfaces
+				  <li> Expanded molecule library
+                  <li> Export of spectra (NMR, IR, energy profiles)
+               </ul>
+               </p>
+
+            </div> <!-- end article -->
+
+
+            <div class="article">
+               <h2><span>Other Features</span></h2>
+
+               <h3><span>v2.3</span></h2>
+
+               <ul class="content_list">
+				  <li> New parser library
+				  <li> Mesh decimation for simplified surfaces 
+                  <li> Improved support for QChem 4.2
+                  <li> Support for SCAN job types in QChem
+               </ul>
+               </p>
+
+
+               <h3> v2.2 </h3>
+               <ul class="content_list">
+				  <li> Revamped molecular builder:
+                      <ul class="content_list">
+                         <li> Add atoms, functional groups, EFPs and entire molecules
+                         <li> Extensive and extensible library of molecules and fragments
+                      </ul>
+				  <li> OpenGL shader support:
+                      <ul class="content_list">
+                         <li> Allows greater configurablity of appearance
+                         <li> Users can add their own shaders.
+                      </ul>
+				  <li> ESP plotting from a Distributed Multipole Analysis (from Q-Chem output file)
+				  <li> Animation of molecular surfaces
+				  <li> SGE queue system support for remote submission
+
+               </ul>
+
+               <h3> v2.1 </h3>
+
+               <ul class="content_list">
+				  <li> Remote submission of Q-Chem calculations:
+                      <ul class="content_list">
+                         <li> PBS and Basic server types supported
+                         <li> Configurable submission and job control
+                         <li> All communication occurs over secure SSH channels
+                         <li> Support for multiple servers
+                      </ul>
+				  <li> Support for generating movie files:
+                      <ul class="content_list">
+                         <li> OS X version uses native QuickTime support to generate .mov files
+						 <li> Windows and Linux versions generate multiple
+							  image files that can be combined into a movie
+							  file using third party software of your choice
+                      </ul>
+               </ul>
+ 
+
+               <h3> v2.0 </h3>
+
+               <ul class="content_list">
+				  <li> Ability to set geometric constraints including bond
+					   lengths bond angle and torsions.  Constraints are passed
+                       to the MM minimization routine and also the Q-Chem input file
+                  <li> Plotting of the dipole direction
+                  <li> Molecular information panel which includes:
+                        <ul class="content_list">
+                           <li> Numbers of electrons and atoms
+                           <li> Molecular weight
+                           <li> Point group symmetry
+                           <li> Chemical formula
+                        </ul>
+                  <li> Ability to plot surface properties:
+                        <ul class="content_list">
+                           <li> ESP from atomic charges
+                           <li> Custom property from Cube file data
+                           <li> Customization of color gradient
+                        </ul>
+                  <li> Fast pseudo density surface generation:
+                        <ul class="content_list">
+                           <li> van der Waals surfaces
+                           <li> Promolecule density
+                           <li> Superposition of Ionic Densities (SID)
+                        </ul>
+                  <li> Ability to reorder atoms
+                  <li> New animation engine allows for smooth transition between geometries
+               </ul>
+
+
+               <h3> v1.0 </h3>
+
+               <ul class="content_list">
+				  <li> Free-form builder with integrated molecular mechanics
+                       minimization for  structures
+				  <li> Read and write a variety of molecular formats thanks to
+                       the OpenBabel library.  These include
+                        <ul class="content_list">
+                           <li> Cartesian coordinates (.xyz)
+                           <li> Formatted checkpoint files (.fchk)
+                           <li> Protein database files (.pdb)
+                           <li> Cube data files (.cube)
+                           <li> Q-Chem input and output files (.inp, .out)
+                        </ul>
+				  <li> SymMol integration allows nearby structures with higher
+					   symmetry to be found
+				  <li> Four model views including CPK, VDW, tubes and
+                       wireframe
+                  <li> Comprehensive Q-Chem input file generator
+				  <li> Visualization of molecular orbitals and densities,
+                       including transparency
+                  <li> Fast surface generation for multiple molecular orbitals
+                  <li> Animations:
+                        <ul class="content_list">
+                           <li> Normal mode vibrations
+                           <li> Optimization pathways (requires Q-Chem output file)
+                           <li> Intrinsic reaction coordinate (IRC) pathways 
+                                (requires Q-Chem output file)
+                        </ul>
+				  <li> Hierarchical Model View showing data structures in an
+                       intuitive way and allowing multiple molecules to be viewed
+                  <li> Full-screen mode for demonstration
+                  <li> History view allowing multiple levels of undo
+               </ul>
+
+            </div> <!-- End article-->
+         </div>  <!-- End mainbar -->
+         <!-- E N D  C O N T E N T -->
+
+
+         <!-- S I D E B A R -->
+         <div class="sidebar">  
+
+            <div class="gadget">
+               <img src="images/icon.png" alt="IQmol icon" width="180" height="180" />
+            </div>
+
+            <div class="gadget">
+               <h2>Navigation</h2>
+               <ul class="sb_menu">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="downloads.html">Download</a></li>
+                  <li><a href="screenshots">Screenshots</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="downloads/IQmolUserGuide.pdf">User Guide</a></li>
+                  <li><a href="development.html">Development</a></li>
+               </ul>
+            </div>
+         </div>  <!-- End Side Bar -->
+         <div class="clr"></div>
+         <!-- E N D  S I D E B A R -->
+
+
+      </div> <!-- End content -->
+   </div> <!-- End body-->
+
+
+   <!-- F O O T E R -->
+   <div id="footer_bg">
+      <div id="footer">
+         <p class="lf">&copy; Copyright &nbsp;
+            <a href="http://rsc.anu.edu.au/~agilbert/gilbertspace">Andrew Gilbert</a></p>
+         <p class="rf">Layout&nbsp;
+            <a href="http://www.coolwebtemplates.net/">Website Templates</a></p>
+      </div>
+   </div>
+
+
+</div>  <!-- End container -->
+
+
+</body>
+</html>
